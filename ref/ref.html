@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Avita John | Portfolio Blog </title>
+    <link rel="icon" href="">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <div class="whole_app_background">
+
+        <div id="top" onclick="openSlideMenu()">
+            <label id="burger_btn"> &#9776; </label>
+        </div>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()"> &#x2715; </a>
+            <br><br>
+            <div>
+                <ul>
+                    <li class="nav_items">
+                        HOME
+                        <img class="across" src="icons/down.png">
+                    </li>
+                    <li class="nav_items">
+                        BLOG
+                        <img class="across" src="icons/down.png">
+                    </li>
+                    <li class="nav_items">
+                        ABOUT ME
+                        <img class="across" src="icons/down.png">
+                    </li>
+                    <li class="nav_items">
+                        REFERENCES
+                        <img class="across" src="icons/down.png">
+                    </li>
+                </ul>
+            </div>
+
+            <div id="line_holder">
+                <div class="line"></div>
+            </div>
+
+            <div id="footer">
+                Profesional Ethics & Law
+                <br>
+                Portfolio
+                <br><br>
+                Designed by Avita John
+                <br>
+                816012533
+                <br>
+                <br>
+                1/10/2020
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="s_1" class="whole_screen">
+                <div class="home_screen_disp">
+                    <h1 id="t_1"> PROFESIONAL ETHICS & LAW </h1>
+                    <h1 id="t_2"> A Portfolio Blog by Avita John <span id="grey"> 816012635 </span> </h1>
+                    <br><br>
+                    <button id="s_1_btn" class="call_to_action"> VIEW BLOG POSTS </button>
+                    <br>
+                    <div class="mid">
+                        <img id="s_1_dwn" class="scroll_down" src="icons/down.png">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="s_2" >
+                <div class="home_screen_disp disp_2">
+                    <h1 id="t_3"> PORTFOLIO </h1>
+                    <p id="port_desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint molestiae doloribus sed qui illum quaerat saepe fugiat iusto quae, et, neque reprehenderit amet totam voluptate! Error officia quibusdam veniam expedita.
+                    </p>
+                    <br>
+                    <button id="s_2_btn" class="call_to_action"> MORE ABOUT ME </button>
+                </div>
+            </div>
+
+            <div id="s_3" >
+                <div class="center">
+                    <div class="flex_side">
+                        <h1 id="blg_title"> BLOG POSTS </h1>
+                        <p id="blg_para" class="blog_desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia obcaecati, ea quaerat! Eius, ullam, quia? Officiis dolore voluptate, dignissimos harum culpa possimus sapiente quo soluta consequuntur voluptatum error eum pariatur!
+                        </p>
+                        <button id="s_3_btn"  class="call_to_action"> VIEW ALL </button>
+                        <br><br>
+                    </div>
+                    <div class="flex_side">
+                        <div id="card" class="card">
+                            <h1 class="card_title"> ESSAY 1 </h1>
+                            <p class="card_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia obcaecati, ea quaerat! Eius, ullam, quia? Officiis dolore voluptate, dignissimos harum culpa possimus sapiente quo soluta consequuntur voluptatum error eum pariatur!
+                            </p>
+                            <button class="card_btn"> READ MORE </button>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+        </div>
+        
+        
+        <div class="BLOG">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni cum, similique doloremque a rerum, laboriosam dolore iusto ex, vel tempore laudantium ducimus nostrum totam odio ea impedit consequuntur sit. Animi.
+        </div>
+              
+        <div class="ABOUT">
+            
+        </div>        
+        
+        <div class="REF">
+            
+        </div>  
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="footer">
+            Profesional Ethics & Law
+            <br class="for_mobile">
+            Portfolio
+            <br class="for_mobile">
+            <br class="for_mobile">
+            Designed by Avita John
+            <br class="for_mobile">
+            816012533
+            <br class="for_mobile">
+            <br class="for_mobile">
+            1/10/2020
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '300px';
+            document.getElementById('main').style.marginLeft = '360px';
+            document.getElementById('top').style.opacity = '0';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+            document.getElementById('top').style.opacity = '100';
+        }
+
+        function remove_logo() {
+            document.getElementById('logo_in_table').style.display = 'none';
+        }
+
+        function add_logo() {
+            document.getElementById('logo_in_table').style.display = 'table-row';
+        }
+
+        function restart() {
+            location.reload();
+        }
+    </script>
+    
+    <script src="main.js"></script> 
+
+</body>
+
+</html>

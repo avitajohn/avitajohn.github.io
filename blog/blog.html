@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Avita John | Portfolio Blog </title>
+    <link rel="icon" href="">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <div class="BLOG whole_app_background">
+
+        <div id="top" onclick="openSlideMenu()">
+            <label id="burger_btn"> &#9776; </label>
+        </div>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()"> &#x2715; </a>
+            <br><br>
+            <div>
+                <ul>
+                    <li class="nav_items">
+                        HOME
+                        <img class="across" src="icons/down.png">
+                    </li>
+                    <li class="nav_items">
+                        BLOG
+                        <img class="across" src="icons/down.png">
+                    </li>
+                    <li class="nav_items">
+                        ABOUT ME
+                        <img class="across" src="icons/down.png">
+                    </li>
+                    <li class="nav_items">
+                        REFERENCES
+                        <img class="across" src="icons/down.png">
+                    </li>
+                </ul>
+            </div>
+
+            <div id="line_holder">
+                <div class="line"></div>
+            </div>
+
+            <div id="footer">
+                Profesional Ethics & Law
+                <br>
+                Portfolio
+                <br><br>
+                Designed by Avita John
+                <br>
+                816012533
+                <br>
+                <br>
+                1/10/2020
+            </div>
+        </div>
+
+        <div id="main">
+            <h1 class="big_title"> BLOG POSTS </h1>
+            <br>
+            <div class="postcard_holder">
+                <div class="post_card">
+                    <h1 class="postcard_title"> ESSAY 1</h1>
+                    <p class="postcard_desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptatum asperiores, placeat harum ipsum perferendis, porro architecto fugit aspernatur provident sed, deserunt animi ex aut similique commodi nihil. Quis, ad?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aperiam, impedit illo ducimus ab architecto, recusandae at laborum debitis! Enim ipsam officia, nemo obcaecati nobis quis ab accusantium. Veritatis, labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sint asperiores. Totam nihil voluptate sit doloremque similique, amet, officiis eligendi earum fugiat cupiditate laudantium, inventore ratione expedita voluptas veniam, assumenda?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque quam totam dignissimos ducimus porro et maxime, illo reprehenderit quos voluptatum asperiores fugiat. Deserunt et earum officia, facere quibusdam cum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium saepe doloribus similique corporis sunt doloremque vitae, odio! Eum, impedit ratione beatae, repellendus accusantium rem magnam repellat nobis, in maiores sapiente.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor sequi laboriosam laborum, illo, officiis enim placeat nulla voluptates aut quae debitis officia delectus, nobis deserunt quam facere doloremque at.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium harum, a dolorem atque expedita cum neque corporis odio possimus, doloribus ad similique voluptates, excepturi incidunt vitae qui mollitia. Dolore, dolor!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptatum asperiores, placeat harum ipsum perferendis, porro architecto fugit aspernatur provident sed, deserunt animi ex aut similique commodi nihil. Quis, ad?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aperiam, impedit illo ducimus ab architecto, recusandae at laborum debitis! Enim ipsam officia, nemo obcaecati nobis quis ab accusantium. Veritatis, labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sint asperiores. Totam nihil voluptate sit doloremque similique, amet, officiis eligendi earum fugiat cupiditate laudantium, inventore ratione expedita voluptas veniam, assumenda?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque quam totam dignissimos ducimus porro et maxime, illo reprehenderit quos voluptatum asperiores fugiat. Deserunt et earum officia, facere quibusdam cum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium saepe doloribus similique corporis sunt doloremque vitae, odio! Eum, impedit ratione beatae, repellendus accusantium rem magnam repellat nobis, in maiores sapiente.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor sequi laboriosam laborum, illo, officiis enim placeat nulla voluptates aut quae debitis officia delectus, nobis deserunt quam facere doloremque at.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium harum, a dolorem atque expedita cum neque corporis odio possimus, doloribus ad similique voluptates, excepturi incidunt vitae qui mollitia. Dolore, dolor!
+                    </p>
+                    <div class="plagirism_holder">
+                        <iframe class="plagirism" src="about.html"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Profesional Ethics & Law
+            <br class="for_mobile">
+            Portfolio
+            <br class="for_mobile">
+            <br class="for_mobile">
+            Designed by Avita John
+            <br class="for_mobile">
+            816012533
+            <br class="for_mobile">
+            <br class="for_mobile">
+            1/10/2020
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '300px';
+            document.getElementById('main').style.marginLeft = '360px';
+            document.getElementById('top').style.opacity = '0';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+            document.getElementById('top').style.opacity = '100';
+        }
+
+        function remove_logo() {
+            document.getElementById('logo_in_table').style.display = 'none';
+        }
+
+        function add_logo() {
+            document.getElementById('logo_in_table').style.display = 'table-row';
+        }
+
+        function restart() {
+            location.reload();
+        }
+    </script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
