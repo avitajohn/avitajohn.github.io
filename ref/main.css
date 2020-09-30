@@ -746,6 +746,19 @@ input:hover {
         height: 40px;
     }
 }
+
+
+
+
+#BLOG {
+    background-color: grey;
+    position: relative;
+}
+
+
+
+
+
 .whole_app_background {
     background-image: url(./images/gradient.JPG);
     background-size: cover;
@@ -978,9 +991,6 @@ input:hover {
 }
 
 
-
-
-
 .post_card {
     padding: 30px;
     border-radius: 25px;
@@ -1011,7 +1021,15 @@ input:hover {
 .postcard_holder {
     padding: 50px;
 }
+.ref_holder {
+    padding: 20px;
+}
 
-.BLOG {
-    background-color: black;
+.ref_title {
+    font-size: 30px;
+}
+
+.ref_desc {
+    font-size: 18px;
+    padding-top: 10px;
 }
